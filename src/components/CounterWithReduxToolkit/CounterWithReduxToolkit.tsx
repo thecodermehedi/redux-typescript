@@ -1,7 +1,7 @@
-import { increment, decrement, incrementByAmount } from './redux/features/counterSlice';
-import { useAppDispatch, useAppSelector } from './redux/hook';
+import { increment, decrement, incrementByAmount } from '../../redux/features/counterSlice';
+import { useAppDispatch, useAppSelector } from '../../redux/hook';
 
-const App = () => {
+const CounterWithReduxToolkit = () => {
  const dispatch = useAppDispatch();
  const count = useAppSelector((state) => state.counter.count);
 
@@ -30,4 +30,4 @@ const App = () => {
  );
 };
 
-export default App;
+export default CounterWithReduxToolkit;
